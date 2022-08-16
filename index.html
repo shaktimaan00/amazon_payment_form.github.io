@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="stylesheet" href="payment_form.css">
+        <title>Document</title>
+        
+    </head>
+    <body>
+        <div class="image">
+            <img src="./payment_form_header.gif" alt="">
+        </div>
+        <div class="main-container">
+            <div class="main-heading">
+                <p>Select a payment method</p>
+            </div>
+            <div class="container-box">
+                <div class="container1">
+                    <div class="sub-container">                       
+                        <div class="aval-balance">
+                            <h3 class="h3-heading">Your available balance</h3>
+                            <div class="divider"></div>
+                            <div class="pay-balance-box">
+                                <div class="pay-balance">
+                                    <input type="checkbox">
+                                    <p>Use your amazon pay balance</p>
+                                </div>
+                                <div class="pay-info">
+                                    <p>1. For optimal utilization of your Amazon Pay balance, balance expiring the earliest will be redeemed first.</p>
+                                    <p>2. Your Amazon Pay balance cannot be used along with Cash on Delivery or the EMI payment modes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay-method">
+                            <h3 class="h3-heading">Another payment method</h3>
+                            <div class="divider"></div>
+                                <div class="red-box" id="red-box-id">
+                                    <div class="debit-card-box">
+                                        <input type="radio" id="debit-card-input">
+                                        <div class="debit-card-container">
+                                            <p class="sub1-heading">Add Debit/Credit/ATM Card</p>
+                                            <p class="sub2-heading">You can save your cards as per new RBI guidelines. <a class="link" href="#">Learn More</a> <i class="fas fa-angle-down"></i> </p>
+                                            <div class="card-images">
+                                                <div class="card-image"><img src="./credit card assests/american-express.jpg"></div>
+                                                <div class="card-image"><img src="./credit card assests/diners club.png"></div>
+                                                <div class="card-image"><img src="./credit card assests/maestro.png"></div>
+                                                <div class="card-image"><img src="./credit card assests/mastercard.png"></div>
+                                                <div class="card-image"><img src="./credit card assests/Rupay._CB404661278_.gif"></div>
+                                                <div class="card-image"><img src="./credit card assests/visa._CB413173451_.png"></div>
+                                            </div>
+                                            <div class="add-credit" id="add-credit-id">
+                                                <div class="sub-add-credit">
+                                                    <div class="plus"><img src="./credit card assests/PlusIcon.gif" alt=""></div>
+                                                    <img class="card-logo" src="./credit card assests/card-logo-compact.gif">
+                                                    <a href="#">Add a credit or debit card <i class="fas fa-caret-right"></i> </a>
+                                                    <p>Amazon.com accepts all major credit & cards</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                        </div>
+
+                        <div class="net-banking">
+                            <p class="sub1-heading">Net Banking</p>
+                            <!-- <div class="divider"></div> -->
+                            <div class="sub-net-banking">
+                                <input type="radio" id="net-banking-radio">
+                                <div class="options">
+                                    <select>
+                                        <option value="select an option" selected disabled hidden>select an option</option>
+                                        <option value="">Airtels Payments Bank</option>
+                                        <option value="">Axis Bank</option>
+                                        <option value="">HDFC Bank</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="block-info-active" id="block-info-id">
+                                <div class="banking-info">
+                                    <i class="fas fa-info"></i>
+                                    <p>To pay faster and get instant refunds, Please use UPI <a href="#">Why?</a> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="upi-payment">
+                            <div class="sub-upi-payment">
+                                <input type="radio" id="upi-radio">
+                                <p class="sub1-heading">Other UPI Apps</p>
+                            </div>
+                            <div class="inactive" id="enter-upi">
+                                <div class="enter-upi-id">
+                                    <p>Please enter your UPI ID</p>
+                                    <div class="verify">
+                                        <input type="text" placeholder="Ex: MobileNumber@upi">
+                                        <button>Verify</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="emi">
+                            <input type="radio">
+                            <p class="sub1-heading unavailable">EMI Unavailable <a href="#">Why?</a> </p>
+                        </div>
+
+                        <div class="POD">
+                            <input type="radio">
+                            <div class="pay-del">
+                                <p class="sub1-heading">Pay on Delivery</p>
+                                <p class="sub2-heading">Due to high demand and to ensure social distancing, Pay on Delivery is not available.</p>
+                            </div>
+                        </div>
+
+                    </div>  
+                </div>
+
+                <div class="container2">
+                    <div class="main-content">
+                        <div class="btn-primary">
+                            <button>Continue</button>
+                        </div>
+                        <div class="info">
+                            <p>You can review this order before its final.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-options">
+                <div class="cont1">
+                    <h3>More payment options</h3>
+                    <div class="divider"></div>
+                    <h3 class="s-heading">Gift Cards, Vouchers & Promotional Codes</h3>
+                    <p class="gift-card" id="gift-id"><i class="fas fa-caret-right"></i><a >Enter a gift card, voucher or promotional code</a> </p>
+
+                    <div class="inactive" id="enter-code-id">
+                        <div class="enter-code">
+                            <input type="text" placeholder="Enter code">
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="cont2">
+                    <div class="main-content">
+                        <div class="btn-primary">
+                            <button>Continue</button>
+                        </div>
+                        <div class="info">
+                            <p>You can review this order before its final.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="need-help">
+                <div class="page-divider"></div>
+                <p>Need help? Check our <a href="">help pages</a> or <a href="">contact us 24x7</a></p>
+                <p class="copyright"><a href="">Conditions of use</a> | <a href="">Privacy Notice</a> &copy 2012-2022, Amazon.com, Inc. and its affiliates</p>
+            </div>
+
+        </div>
+
+
+        <script src="payment_form.js"></script>
+    </body>
+</html>
